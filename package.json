@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/fumiya-kume/RssParser#readme",
   "dependencies": {
+    "durable-functions": "0.0.3",
     "feedparser": "^2.2.9",
     "request": "^2.87.0"
   }
