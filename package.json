@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/fumiya-kume/RssParser/issues"
   },
-  "homepage": "https://github.com/fumiya-kume/RssParser#readme"
+  "homepage": "https://github.com/fumiya-kume/RssParser#readme",
+  "dependencies": {
+    "feedparser": "^2.2.9",
+    "request": "^2.87.0"
+  }
 }

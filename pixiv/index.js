@@ -1,17 +1,9 @@
-module.exports = function (context, req) {
-    context.log('JavaScript HTTP trigger function processed a request.');
+const RssParser = require('../lib/RssParser');
 
-    if (req.query.name || (req.body && req.body.name)) {
-        context.res = {
-            // status: 200, /* Defaults to 200 */
-            body: "Hello " + (req.query.name || req.body.name)
-        };
-    }
-    else {
-        context.res = {
-            status: 400,
-            body: "Please pass a name on the query string or in the request body"
-        };
-    }
-    context.done();
+module.exports = async function (context, req) {
+    const pixivUrl = req.query.page ? `https://inside.pixiv.blog/feed?page=${req.query.page}` : "https://inside.pixiv.blog/feed";
+    const rssParser = new RssParser(pixivUrl);
+    const RssContent = await rssParser.Load();
+    context.log(RssContent);
+    context.res = {body:RssContent};
 };
