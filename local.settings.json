@@ -2,6 +2,7 @@
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "node",
-    "AzureWebJobsStorage": "UseDevelopmentStorage=true"
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "publicRssContentStorage": "DefaultEndpointsProtocol=https;AccountName=publictechinfo;AccountKey=Pgmqvn47qVa/bu7McI5BPZWVM2hYFJYKj4DdzpJeOmbTQjsOGolBjXXbNJ6WsGpsxuGtP+0XXGIZ/uU3QXfD5w==;EndpointSuffix=core.windows.net"
   }
 }

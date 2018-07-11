@@ -12,6 +12,13 @@
       ]
     },
     {
+      "name": "RssBlob",
+      "type": "blob",
+      "path": "rssitems/pivix.json",
+      "connection": "publicRssContentStorage",
+      "direction": "out"
+    },
+    {
       "type": "http",
       "direction": "out",
       "name": "res"

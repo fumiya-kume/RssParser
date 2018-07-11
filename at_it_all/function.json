@@ -15,6 +15,13 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "name": "RssBlob",
+      "type": "blob",
+      "path": "rssitems/at_ai_all.json",
+      "connection": "publicRssContentStorage",
+      "direction": "out"
     }
   ]
 }

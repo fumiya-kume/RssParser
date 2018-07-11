@@ -15,6 +15,13 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "name": "RssBlob",
+      "type": "blob",
+      "path": "rssitems/cookpad.json",
+      "connection": "publicRssContentStorage",
+      "direction": "out"
     }
   ]
 }

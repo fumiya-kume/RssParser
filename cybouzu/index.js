@@ -5,5 +5,6 @@ module.exports = async function (context, req) {
     const rssParser = new RssParser(pixivUrl);
     const RssContent = await rssParser.Load();
     context.log(RssContent);
+    context.bindings.RssBlob = RssContent
     context.res = {body:RssContent};
 };

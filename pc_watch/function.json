@@ -14,7 +14,7 @@
     {
       "name": "RssBlob",
       "type": "blob",
-      "path": "rssitems/cybouzu.json",
+      "path": "rssitems/pc_watch.json",
       "connection": "publicRssContentStorage",
       "direction": "out"
     },
